@@ -1,0 +1,129 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #FFF;
+}
+
+.face {
+ width: 450px;
+ height: 320px;
+ border: solid 3px black;
+ border-radius: 50%;
+ background: #f8ddce;
+ position: relative;
+ margin: 0 auto 0 auto;
+ display: flex;
+justify-content: space-around;
+
+}
+
+.eye {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+    background: black;
+    overflow: hidden;
+}
+
+.eye:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -24px;
+    left: -10px;
+    background: white;
+    animation: shake 0.1s infinite ease-in-out;
+
+}
+
+.eye:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background: white;
+    animation: shake 0.1s infinite ease-in-out;
+}
+
+.mouth {
+    width: 180px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 60px;
+    left: 135px;
+    overflow: hidden;
+}
+
+.tooth {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+
+}
+
+.t-left {
+    left: 30px;
+    top: -10px;
+}
+
+.t-center {
+    top: -15px;
+    left: 75px;
+}
+
+.t-right {
+    top: -10px;
+    right: 30px;
+}
+
+.tongue {
+    width: 60px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ea6e74;
+    position: absolute;
+    bottom: -20px;
+    right: 40px;
+}
+
+.cheek {
+    width: 30px;
+    height: 60px;
+    background: #f8ddce;
+    position: absolute;
+    bottom: 50px;
+    border-radius: 50%;
+}
+
+.c-left {
+    border-right: 1px solid black;
+    left: 125px;
+    transform: rotate(10);
+}
+
+.c-right {
+    border-left: 1px solid black;
+    right: 125px;
+    transform: rotate(-10);
+}
+
+@keyframes shake {
+    0%   {transform: translateX(-2)} /* Início da animação */
+    100% {transform: translateX(2px)} /* Fim da animação */
+}
