@@ -13,3 +13,4 @@ data: (16/6/2020)
 - Desenho
 - Animação utilizando keyframe
 
+<img src="/finn_css/finn.png" alt="">
